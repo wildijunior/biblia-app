@@ -15,6 +15,9 @@ export default function Header() {
             <Link href="/verso">
               <a>Verso</a>
             </Link>
+            <Link href="/about">
+              <a>About</a>
+            </Link>
           </div>
         </Toolbar>
       </AppBar>
