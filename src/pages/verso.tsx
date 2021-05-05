@@ -13,34 +13,34 @@ export default function verso({ data }) {
     </Head>
         <h1 style={{ textAlign: "center" }}>Verso do Dia</h1>
 
-        <Biblia
+        {/* <Biblia
           nome="Nome"
           grupo="Grupo"
           capitulo={5}
           numero={1}
           texto="Texto"
-        />
+        /> */}
 
-        {/* <Biblia
+        <Biblia
           nome={data.book.name}
           grupo={data.book.group}
           capitulo={data.chapter}
           numero={data.number}
           texto={data.text}
-        /> */}
+        />
     </>
   );
 }
 
-// export const getStaticProps: GetStaticProps = async () => {
-//   const { data } = await api.get("/");
+export const getStaticProps: GetStaticProps = async () => {
+  const { data } = await api.get("/");
 
-//   console.log(data);
+  console.log(data);
 
-//   return {
-//     props: {
-//       data,
-//     },
-//     revalidate: 60 * 60 * 3,
-//   };
-// };
+  return {
+    props: {
+      data,
+    },
+    revalidate: 60 * 60 * 3,
+  };
+};
