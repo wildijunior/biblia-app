@@ -1,0 +1,27 @@
+.cardRoot {
+  width: 375px;
+  background-color: #ffd369 !important;
+  color: #dddd;
+
+  display: block;
+  margin: 20px auto;
+
+  box-shadow: 0 0 0.5em gray !important;
+
+  h3 {
+    text-align: center;
+  }
+  hr {
+    border: 1px solid;
+  }
+
+  p {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 375px) {
+  .cardRoot {
+    width: 330px !important;
+  }
+}
